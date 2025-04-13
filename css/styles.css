@@ -24,7 +24,6 @@ p {
 img {
   display: block;
   max-width: 100%;
-  margin-bottom: 32px;
 }
 
 body {
@@ -69,6 +68,7 @@ body {
 
 .navigation-style {
   display: flex;
+  align-items: center;
 }
 
 .logo {
@@ -137,7 +137,7 @@ body {
 
 .order-service-section {
   background-color: #2e2f42;
-  text-align: center;
+  padding: 188px 0;
 }
 
 .hero-header-style {
@@ -153,6 +153,7 @@ body {
 }
 
 .order-service-button {
+  display: block;
   color: #ffffff;
   background-color: #4d5ae5;
   font-weight: 500;
@@ -165,8 +166,8 @@ body {
   border: 0;
   border-radius: 4px;
   padding: 16px 32px;
-  width: 170px;
-  height: 56px;
+  min-width: 169px;
+  margin: 0 auto;
 }
 
 .order-service-button:hover,
@@ -178,7 +179,7 @@ body {
 
 .our-benefits-list {
   display: flex;
-  justify-content: space-between;
+  gap: 24px;
 }
 
 .our-benefits-list-item {
@@ -209,25 +210,31 @@ body {
 
 .our-team-list {
   display: flex;
-  justify-content: space-between;
+  gap: 24px;
 }
 
 .our-team-list-item {
   background-color: #fff;
   border-radius: 0 0 4px 4px;
-  padding-bottom: 32px;
-  text-align: center;
+}
+
+.team-member-text-container {
+  padding: 32px 0;
 }
 
 .our-benefits-list-item-header,
-.our-team-list-item-header,
-.our-portfolio-list-item-header {
+.our-team-list-item-header {
   font-weight: 500;
   font-size: 20px;
   line-height: 1.2;
   letter-spacing: 0.02em;
   color: #2e2f42;
   margin-bottom: 8px;
+  text-align: center;
+}
+
+.our-team-list-item-text {
+  text-align: center;
 }
 
 .our-benefits-list-item-text,
@@ -247,16 +254,22 @@ body {
 }
 
 .our-portfolio-list-item {
-  border-bottom: 1px solid #e7e9fc;
-  border-left: 1px solid #e7e9fc;
-  border-right: 1px solid #e7e9fc;
   flex-basis: calc((100% - 48px) / 3);
-  padding-bottom: 32px;
 }
 
-.our-portfolio-list-item-header,
-.our-portfolio-list-item-text {
-  padding-left: 16px;
+.portfolio-item-text-container {
+  border: 1px solid #e7e9fc;
+  border-top: none;
+  padding: 32px 16px;
+}
+
+.our-portfolio-list-item-header {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  color: #2e2f42;
+  margin-bottom: 8px;
 }
 
 /* footer */
@@ -269,7 +282,7 @@ body {
 
 
 .footer-logo {
-  display: block;
+  display: inline-block;
   margin-bottom: 16px;
 }
 
